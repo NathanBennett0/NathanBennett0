@@ -25,14 +25,67 @@
             </div>
         </div>
     </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome to my portfolio! I am a passionate developer with a focus on creating impactful projects.</p>
-        </section>
-    </main>
-    <footer>
-        <p></p>
-    </footer>
+    <!------about------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/ProfilePhoto.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Welcome to my portfolio! I am a passionate developer with a focus on creating impactful projects.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Frontend</span><br>JavaScript, React, HTML, CSS
+                            </li>
+                            <li>
+                                <span>Backend</span><br>Python, Java
+                            </li>
+                            <li>
+                                <span>AI</span><br>Generative, neural nets, ethics
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>McDonalds</span><br>FOH
+                            </li>
+                            <li>
+                                <span>NZPost</span><br>Sorting packages
+                            </li>
+                            <li>
+                                <span>AkoTech</span><br>Tutoring students in programming
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>VIC uni</span><br>FOH
+                            </li>
+                            <li>
+                                <span>NZPost</span><br>Sorting packages
+                            </li>
+                            <li>
+                                <span>AkoTech</span><br>Tutoring students in programming
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
+<script src="about-tab-script.js"></script>
