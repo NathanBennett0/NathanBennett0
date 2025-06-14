@@ -137,6 +137,38 @@ nav ul li a:hover::after {
     color: #4335df;
     font-size: 14px;
 }
+.tab-contents ol {
+    list-style-type: none;
+}
+.tab-contents ol li {
+    position: relative;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.tab-contents ol li span {
+    color: #4335df;
+    font-size: 14px;
+}
+.tab-contents ol li:before {
+    content: "";
+    position: absolute;
+    background-color: #4335df;
+    bottom: 0;
+    top: 0;
+    left: 6px;
+    width: 3px;
+}
+.tab-contents ol li:after {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    background-color: #4335df;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    top: 10px;
+}
 .tab-contents {
     display: none;
 }
@@ -166,10 +198,7 @@ nav ul li a:hover::after {
     display: block;
 }
 .contact-left {
-    flex-basis: 35%;
-}
-.contact-right {
-    flex-basis: 60%;
+    flex-basis: 65%;
 }
 .contact-left p{
     margin-top: 30px;
