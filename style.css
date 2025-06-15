@@ -251,3 +251,10 @@ nav ul li a:hover::after {
     background-color: var(--blue3);
     color: var(--white);
 }
+.hidden {
+    opacity: 0;
+}
+.show {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
