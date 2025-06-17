@@ -244,7 +244,7 @@ nav ul li a:hover::after {
     margin-top: 20px;
     color: var(--blue2);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 30px;
     line-height: 60px;
     background: var(--blue3);
     width: 60px;
