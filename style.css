@@ -300,3 +300,229 @@ nav ul li a:hover::after {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
+
+/* Tablet styles */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px 5%;
+    }
+    
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    nav ul {
+        text-align: center;
+    }
+    
+    nav ul li {
+        margin: 5px 15px;
+    }
+    
+    /* Header text */
+    .header-text {
+        margin-top: 30%;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .header-text h1 {
+        font-size: 45px;
+    }
+    
+    /* About section */
+    .row {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+    }
+    
+    .subtitle {
+        font-size: 45px;
+        text-align: center;
+    }
+    
+    /* Tab navigation */
+    .tab-titles {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .tab-links {
+        margin-right: 20px;
+        font-size: 16px;
+    }
+    
+    /* Projects grid */
+    .project-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    
+    /* Contact */
+    .contact-left {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 10px 3%;
+    }
+    
+    /* Navigation - consider hamburger menu */
+    nav h1 {
+        font-size: 2rem;
+    }
+    
+    nav ul li {
+        margin: 5px 10px;
+    }
+    
+    nav ul li a {
+        font-size: 16px;
+    }
+    
+    /* Header */
+    .header-text {
+        margin-top: 40%;
+        font-size: 24px;
+    }
+    
+    .header-text h1 {
+        font-size: 36px;
+    }
+    
+    /* About section */
+    .subtitle {
+        font-size: 36px;
+    }
+    
+    /* Tab navigation - stack vertically */
+    .tab-titles {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .tab-links {
+        margin-right: 0;
+        padding: 10px 20px;
+        border: 1px solid var(--blue3);
+        border-radius: 5px;
+        width: 150px;
+        text-align: center;
+    }
+    
+    /* Projects - single column */
+    .project-list {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    
+    /* Layer text sizing */
+    .layer {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    
+    .layer h3 {
+        font-size: 18px;
+    }
+    
+    /* Contact section */
+    .contact-left p {
+        font-size: 16px;
+    }
+    
+    .social-icons a {
+        font-size: 25px;
+        margin-right: 20px;
+    }
+    
+    .btn {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+}
+
+/* Hamburger menu styles for mobile navigation */
+@media screen and (max-width: 480px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: var(--white);
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: var(--black);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        z-index: 1000;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu li {
+        margin: 15px 0;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* Additional mobile optimizations */
+@media screen and (max-width: 480px) {
+    /* Make touch targets larger */
+    nav ul li a {
+        padding: 10px;
+        display: block;
+    }
+    
+    /* Improve readability */
+    p, li {
+        line-height: 1.8;
+    }
+    
+    /* Optimize images */
+    .about-col-1 img {
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    /* Fix background attachment on mobile */
+    header {
+        background-attachment: scroll;
+    }
+}
