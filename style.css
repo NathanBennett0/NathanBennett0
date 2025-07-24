@@ -500,3 +500,29 @@ nav ul li a:hover::after {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+/* Additional mobile optimizations */
+@media screen and (max-width: 480px) {
+    /* Make touch targets larger */
+    nav ul li a {
+        padding: 10px;
+        display: block;
+    }
+    
+    /* Improve readability */
+    p, li {
+        line-height: 1.8;
+    }
+    
+    /* Optimize images */
+    .about-col-1 img {
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    /* Fix background attachment on mobile */
+    header {
+        background-attachment: scroll;
+    }
+}
