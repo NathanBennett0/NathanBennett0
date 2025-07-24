@@ -300,3 +300,74 @@ nav ul li a:hover::after {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
+
+/* Tablet styles */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px 5%;
+    }
+    
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    nav ul {
+        text-align: center;
+    }
+    
+    nav ul li {
+        margin: 5px 15px;
+    }
+    
+    /* Header text */
+    .header-text {
+        margin-top: 30%;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .header-text h1 {
+        font-size: 45px;
+    }
+    
+    /* About section */
+    .row {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+    }
+    
+    .subtitle {
+        font-size: 45px;
+        text-align: center;
+    }
+    
+    /* Tab navigation */
+    .tab-titles {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .tab-links {
+        margin-right: 20px;
+        font-size: 16px;
+    }
+    
+    /* Projects grid */
+    .project-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    
+    /* Contact */
+    .contact-left {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
