@@ -371,3 +371,89 @@ nav ul li a:hover::after {
         text-align: center;
     }
 }
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 10px 3%;
+    }
+    
+    /* Navigation - consider hamburger menu */
+    nav h1 {
+        font-size: 2rem;
+    }
+    
+    nav ul li {
+        margin: 5px 10px;
+    }
+    
+    nav ul li a {
+        font-size: 16px;
+    }
+    
+    /* Header */
+    .header-text {
+        margin-top: 40%;
+        font-size: 24px;
+    }
+    
+    .header-text h1 {
+        font-size: 36px;
+    }
+    
+    /* About section */
+    .subtitle {
+        font-size: 36px;
+    }
+    
+    /* Tab navigation - stack vertically */
+    .tab-titles {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .tab-links {
+        margin-right: 0;
+        padding: 10px 20px;
+        border: 1px solid var(--blue3);
+        border-radius: 5px;
+        width: 150px;
+        text-align: center;
+    }
+    
+    /* Projects - single column */
+    .project-list {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    
+    /* Layer text sizing */
+    .layer {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    
+    .layer h3 {
+        font-size: 18px;
+    }
+    
+    /* Contact section */
+    .contact-left p {
+        font-size: 16px;
+    }
+    
+    .social-icons a {
+        font-size: 25px;
+        margin-right: 20px;
+    }
+    
+    .btn {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+}
