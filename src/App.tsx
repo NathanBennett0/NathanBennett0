@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import ProfilePhoto from './images/ProfilePhoto.png'
+import Timeline from './components/Timeline'
 import './App.css'
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
         <div className="logo">
           <img src={ProfilePhoto} className="profile-photo" alt="Profile photo" />
         </div>
+        <Timeline />
+
         <button
           type="button"
           className="counter"
